@@ -4,3 +4,123 @@
     font-weight: 400;
     font-style: normal;
 }
+
+/***************/
+/* 유틸리티 스타일 */
+/***************/
+.ir {
+    position: absolute;
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+
+/**********/
+/* 레이아웃 */
+/**********/
+body {
+    background: no-repeat radial-gradient(96.74% 276.79% at 3.59% 5.28%, #F0F4FF 0%, #A5B6EE 100%);
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    font-family: 'Pretendard-Regular';
+    font-weight: 700;
+}
+
+
+/********/
+/* 타이머 */
+/********/
+.sec-content {
+    background: linear-gradient(144.07deg, #5572BB 2.13%, #374B7C 102.97%);
+    box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+    border-radius: 16px;
+    margin: 60px 0;
+}
+
+.sec-content .sub-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: center;
+    color: white;
+    margin-top: 48px
+}
+
+.sec-content .sub-title::after {
+    content: '';
+    display: block;
+    position: relative;
+    margin: 23px 44px 32px;
+    width: 312px;
+    height: 1px;
+    background: #3D538A;
+    border-bottom: 1px solid #5B75B4;
+}
+
+.sec-content .timer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+}
+
+.timer figcaption {
+    font-size: 12px;
+    color: #A5B6EE;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.timer .figure::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    background: no-repeat url(img/dot.png);
+}
+
+
+/*******/
+/* 버튼 */
+/*******/
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    margin: 40px 0;
+}
+
+/*******/
+/* 푸터 */
+/*******/
+.txt-footer {
+    font-size: 14px;
+    color: #8596BF;
+}
